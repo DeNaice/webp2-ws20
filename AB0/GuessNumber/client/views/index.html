@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Guess the Number!</title>
+    <!-- Linking of the stylesheets -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+
+
+    <!-- Linking of my own Stylesheet -->
+    <link rel="stylesheet" href="/css">
+
+    <!--Import javascript libraries -->
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="node_modules/popper.js/dist/umd/popper.js"></script>
+    <script type="text/javascript" src="/bootstrap"></script>
+
+    <!-- Import own script which is a module -->
+    <script type="module" src="../src/client.js"></script>
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Guessing a Number</a>
+</nav>
+<br>
+<nav>
+    <div class="input-group mb-3">
+        <input type="number" id="guessNumber" class="form-control" placeholder="Guess the Number" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+            <button class="btn btn-secondary" type="button" id="guessButton">Guess!</button>
+        </div>
+    </div>
+</nav>
+<nav>
+    <div class="input-group mb-3">
+        <input type="text" id="passwortFeld" class="form-control" placeholder="Password for Cheating!" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+            <button  class="btn btn-secondary" type="button" id="passwortButton">CHEAT!!</button>
+        </div>
+    </div>
+</nav>
+<nav>
+<div class="input-group">
+    <input type="number" id="minValue" placeholder="Minimum Value" aria-label="First name" class="form-control">
+    <input type="number" id="maxValue" placeholder="Maximum Value" aria-label="Last name" class="form-control">
+    <button class="btn btn-secondary" type="button" id="resetButton">Reset</button>
+</div>
+</nav>
+</body>
+</html>
